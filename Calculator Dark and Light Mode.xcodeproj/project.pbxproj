@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */; };
-		FB7561D62C81C15B00A0A5A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* ContentView.swift */; };
+		FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */; };
 		FB7561D82C81C15C00A0A5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */; };
 		FB7561DC2C81C15C00A0A5A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561DB2C81C15C00A0A5A0 /* Preview Assets.xcassets */; };
+		FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561E32C81CA7A00A0A5A0 /* ColorConstants.swift */; };
+		FB7561E92C81CC1700A0A5A0 /* SunMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */; };
+		FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */; };
+		FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB7561D02C81C15B00A0A5A0 /* Calculator Dark and Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Dark and Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_Dark_and_Light_ModeApp.swift; sourceTree = "<group>"; };
-		FB7561D52C81C15B00A0A5A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7561D92C81C15C00A0A5A0 /* Calculator_Dark_and_Light_Mode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculator_Dark_and_Light_Mode.entitlements; sourceTree = "<group>"; };
 		FB7561DB2C81C15C00A0A5A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB7561E32C81CA7A00A0A5A0 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonView.swift; sourceTree = "<group>"; };
+		FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
+		FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */,
-				FB7561D52C81C15B00A0A5A0 /* ContentView.swift */,
+				FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */,
+				FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */,
+				FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */,
+				FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */,
+				FB7561E52C81CAA000A0A5A0 /* constants */,
 				FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */,
 				FB7561D92C81C15C00A0A5A0 /* Calculator_Dark_and_Light_Mode.entitlements */,
 				FB7561DA2C81C15C00A0A5A0 /* Preview Content */,
@@ -67,6 +79,14 @@
 				FB7561DB2C81C15C00A0A5A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB7561E52C81CAA000A0A5A0 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				FB7561E32C81CA7A00A0A5A0 /* ColorConstants.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7561D62C81C15B00A0A5A0 /* ContentView.swift in Sources */,
+				FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */,
+				FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */,
+				FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */,
+				FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */,
+				FB7561E92C81CC1700A0A5A0 /* SunMoonView.swift in Sources */,
 				FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
