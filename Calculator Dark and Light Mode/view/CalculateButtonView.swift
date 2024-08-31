@@ -51,7 +51,7 @@ struct CalculateButtonView: View {
             }
             calculateResult(calcButton: calcButton)
         case .decimal:
-            print("decimal")
+            changeCurrentValueToDecimal()
         case .percent:
             if lastCharisDigitOrPercent(str: currentComputation) {
                 appendToCurrentComputation(calcButton: calcButton)
@@ -63,7 +63,6 @@ struct CalculateButtonView: View {
                 appendToCurrentComputation(calcButton: calcButton)
             }
         default:
-            //TODO: Need Further implementation
             appendToCurrentComputation(calcButton: calcButton)
         }
     }
@@ -105,6 +104,33 @@ struct CalculateButtonView: View {
             workings += "0"
         }
         return workings
+    }
+    
+
+    
+    private func changeCurrentValueToDecimal(){
+        if let lastOccurentOfDecimal = currentComputation.lastIndex(of: ".") {
+            if lastCharisDigit(str: currentComputation) {
+                addDigitIntoLastNumber(lastOccurentOfDecimal)
+            }
+        } else {
+            if currentComputation.isEmpty {
+                currentComputation += "0."
+            }else if lastCharisDigit(str: currentComputation) {
+                currentComputation += "."
+            }
+        }
+    }
+    
+    private func addDigitIntoLastNumber(_ lastOccurentOfDecimal: String.Index) {
+        let startIndex = currentComputation.index(lastOccurentOfDecimal, offsetBy: 1)
+        let endIndex = currentComputation.endIndex
+        let range = startIndex ..< endIndex
+        let rightSubString = String(currentComputation[range])
+        
+        if Int(rightSubString) == nil && !rightSubString.isEmpty {
+            currentComputation += "."
+        }
     }
 }
 
