@@ -19,7 +19,9 @@ struct ButtonView: View {
         return predicate ? nil : value
     }
     
-    private let buttonDim: CGFloat = UIScreen.main.bounds.width / 5
+    private let buttonDim: CGFloat = UIDevice.isIpad ?
+        UIScreen.main.bounds.width / 6 :
+        UIScreen.main.bounds.width / 5
     
     
     var body: some View {
@@ -27,8 +29,8 @@ struct ButtonView: View {
             Text(textButton ?? "")
             Image(systemName: systemImage ?? "")
         }
-        .font(.title2)
-        .fontWeight(.semibold)
+        .font(UIDevice.isIpad ? .largeTitle : .title2)
+        .fontWeight(UIDevice.isIpad ? .heavy : .semibold)
         .frame(width: buttonDim, height: buttonDim)
         .foregroundStyle(fgColor)
         .background(bgColor)

@@ -12,7 +12,7 @@
 		FB3070302C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB30702F2C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift */; };
 		FB3070332C82BAEF009C3EE5 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3070322C82BAEF009C3EE5 /* StringUtils.swift */; };
 		FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */; };
-		FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */; };
+		FB7561D62C81C15B00A0A5A0 /* MainCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* MainCalculatorView.swift */; };
 		FB7561D82C81C15C00A0A5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */; };
 		FB7561DC2C81C15C00A0A5A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561DB2C81C15C00A0A5A0 /* Preview Assets.xcassets */; };
 		FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561E32C81CA7A00A0A5A0 /* ColorConstants.swift */; };
@@ -20,6 +20,7 @@
 		FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */; };
 		FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */; };
 		FB7561EF2C81D77D00A0A5A0 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */; };
+		FBBBBD722C831255004BCF28 /* IpadSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBBD712C831255004BCF28 /* IpadSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		FB3070322C82BAEF009C3EE5 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		FB7561D02C81C15B00A0A5A0 /* Calculator Dark and Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Dark and Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_Dark_and_Light_ModeApp.swift; sourceTree = "<group>"; };
-		FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		FB7561D52C81C15B00A0A5A0 /* MainCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalculatorView.swift; sourceTree = "<group>"; };
 		FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7561D92C81C15C00A0A5A0 /* Calculator_Dark_and_Light_Mode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculator_Dark_and_Light_Mode.entitlements; sourceTree = "<group>"; };
 		FB7561DB2C81C15C00A0A5A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
 		FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateButtonView.swift; sourceTree = "<group>"; };
 		FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		FBBBBD712C831255004BCF28 /* IpadSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 		FB30702C2C82B401009C3EE5 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */,
+				FB7561D52C81C15B00A0A5A0 /* MainCalculatorView.swift */,
 				FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */,
 				FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */,
 				FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */,
@@ -99,14 +101,15 @@
 		FB7561D22C81C15B00A0A5A0 /* Calculator Dark and Light Mode */ = {
 			isa = PBXGroup;
 			children = (
+				FBBBBD702C831226004BCF28 /* extensions */,
+				FB7561E52C81CAA000A0A5A0 /* constants */,
 				FB3070312C82BADB009C3EE5 /* helper */,
 				FB30702C2C82B401009C3EE5 /* view */,
 				FB30702B2C82B3FB009C3EE5 /* model */,
+				FB7561DA2C81C15C00A0A5A0 /* Preview Content */,
 				FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */,
-				FB7561E52C81CAA000A0A5A0 /* constants */,
 				FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */,
 				FB7561D92C81C15C00A0A5A0 /* Calculator_Dark_and_Light_Mode.entitlements */,
-				FB7561DA2C81C15C00A0A5A0 /* Preview Content */,
 			);
 			path = "Calculator Dark and Light Mode";
 			sourceTree = "<group>";
@@ -126,6 +129,14 @@
 				FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */,
 			);
 			path = constants;
+			sourceTree = "<group>";
+		};
+		FBBBBD702C831226004BCF28 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBBD712C831255004BCF28 /* IpadSupport.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +212,11 @@
 				FB3070302C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift in Sources */,
 				FB30702E2C82B433009C3EE5 /* CalcButtonModel.swift in Sources */,
 				FB7561EF2C81D77D00A0A5A0 /* Enumerations.swift in Sources */,
+				FBBBBD722C831255004BCF28 /* IpadSupport.swift in Sources */,
 				FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */,
 				FB30702A2C82AF6A009C3EE5 /* ButtonView.swift in Sources */,
 				FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */,
-				FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */,
+				FB7561D62C81C15B00A0A5A0 /* MainCalculatorView.swift in Sources */,
 				FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */,
 				FB3070332C82BAEF009C3EE5 /* StringUtils.swift in Sources */,
 				FB7561E92C81CC1700A0A5A0 /* SunMoonView.swift in Sources */,
@@ -350,8 +362,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -388,8 +399,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

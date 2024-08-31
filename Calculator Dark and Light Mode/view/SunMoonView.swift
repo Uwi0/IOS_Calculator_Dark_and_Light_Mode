@@ -17,12 +17,16 @@ struct SunMoonView: View {
             Image(systemName: "sun.min")
                 .imageScale(.large)
                 .foregroundStyle(sunColor)
+
             
             Image(systemName: "moon")
                 .imageScale(.large)
                 .foregroundStyle(moonColor)
+
         }
         .padding()
+        .font(UIDevice.isIpad ? .title : .body)
+        .fontWeight(UIDevice.isIpad ? .semibold : .regular)
         .background(secondaryBackgroundColor)
         .cornerRadius(20)
     }

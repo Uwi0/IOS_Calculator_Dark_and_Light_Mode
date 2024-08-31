@@ -11,7 +11,7 @@ import SwiftUI
 struct Calculator_Dark_and_Light_ModeApp: App {
     var body: some Scene {
         WindowGroup {
-            CalculatorView()
+            MainCalculatorView()
         }
     }
 }

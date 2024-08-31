@@ -14,7 +14,10 @@ struct CalculateButtonView: View {
             }
         }
         .padding()
-        .background(secondaryBackgroundColor.cornerRadius(20))
+        .background(
+            secondaryBackgroundColor
+                .cornerRadius(UIDevice.isIpad ? 50 : 20)
+        )
     }
     
     private func RowOfCalcButton(_ rowOffButtons: RowOfCalcButtonsModel) -> ButtonRows {
