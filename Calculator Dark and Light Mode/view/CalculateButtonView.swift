@@ -46,7 +46,10 @@ struct CalculateButtonView: View {
             currentComputation = ""
             mainResult = "0"
         case .equal, .negative:
-            print("eq/neg")
+            if fieldIsNotValid() {
+                return
+            }
+            calculateResult(calcButton: calcButton)
         case .decimal:
             print("decimal")
         case .percent:
@@ -69,6 +72,40 @@ struct CalculateButtonView: View {
         currentComputation += calcButton.rawValue
     }
     
+    private func fieldIsNotValid() -> Bool {
+        let fieldIsEmpty = currentComputation.isEmpty
+        let lastCharIsAnOperator = lastCharacterIsAnOperator(str: currentComputation)
+        return fieldIsEmpty || lastCharIsAnOperator
+    }
+    
+    
+    private func calculateResult(calcButton: CalcButton) {
+        let sign = calcButton == .negative ? -1.0 : 1.0
+        let computationValue = computeCurrentComputation()
+        mainResult = formatResult(value: sign * computationValue)
+        
+        if calcButton == .negative {
+            currentComputation = mainResult
+        }
+    }
+    
+    private func computeCurrentComputation() -> Double {
+        let formattedValue = reformatCurrentComputation()
+        let expr = NSExpression(format: formattedValue)
+        let exprValue = expr.expressionValue(with: nil, context: nil) as! Double
+        return exprValue
+    }
+    
+    private func reformatCurrentComputation() -> String {
+        let visibleWorking: String = currentComputation
+        var workings = visibleWorking.replacingOccurrences(of: "%", with: "*0.01")
+        workings = workings.replacingOccurrences(of: multiplySymbol, with: "*")
+        workings = workings.replacingOccurrences(of: divisionSymbol, with: "/")
+        if getlastCharOrEmptyOf(str: visibleWorking) == "." {
+            workings += "0"
+        }
+        return workings
+    }
 }
 
 #Preview {
