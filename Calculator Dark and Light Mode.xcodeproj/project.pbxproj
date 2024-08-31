@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB30702A2C82AF6A009C3EE5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3070292C82AF6A009C3EE5 /* ButtonView.swift */; };
 		FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */; };
 		FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */; };
 		FB7561D82C81C15C00A0A5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB3070292C82AF6A009C3EE5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FB7561D02C81C15B00A0A5A0 /* Calculator Dark and Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Dark and Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_Dark_and_Light_ModeApp.swift; sourceTree = "<group>"; };
 		FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */,
 				FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */,
 				FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */,
+				FB3070292C82AF6A009C3EE5 /* ButtonView.swift */,
 				FB7561E52C81CAA000A0A5A0 /* constants */,
 				FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */,
 				FB7561D92C81C15C00A0A5A0 /* Calculator_Dark_and_Light_Mode.entitlements */,
@@ -164,6 +167,7 @@
 			files = (
 				FB7561EF2C81D77D00A0A5A0 /* Enumerations.swift in Sources */,
 				FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */,
+				FB30702A2C82AF6A009C3EE5 /* ButtonView.swift in Sources */,
 				FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */,
 				FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */,
 				FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */,
