@@ -15,6 +15,7 @@
 		FB7561E92C81CC1700A0A5A0 /* SunMoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */; };
 		FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */; };
 		FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */; };
+		FB7561EF2C81D77D00A0A5A0 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FB7561E82C81CC1700A0A5A0 /* SunMoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunMoonView.swift; sourceTree = "<group>"; };
 		FB7561EA2C81CCF800A0A5A0 /* ComputationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationView.swift; sourceTree = "<group>"; };
 		FB7561EC2C81CEAC00A0A5A0 /* CalculateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateButtonView.swift; sourceTree = "<group>"; };
+		FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7561E32C81CA7A00A0A5A0 /* ColorConstants.swift */,
+				FB7561EE2C81D77D00A0A5A0 /* Enumerations.swift */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7561EF2C81D77D00A0A5A0 /* Enumerations.swift in Sources */,
 				FB7561E42C81CA7A00A0A5A0 /* ColorConstants.swift in Sources */,
 				FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */,
 				FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */,
