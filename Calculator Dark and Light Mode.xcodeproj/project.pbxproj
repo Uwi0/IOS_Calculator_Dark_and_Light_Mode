@@ -10,6 +10,7 @@
 		FB30702A2C82AF6A009C3EE5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3070292C82AF6A009C3EE5 /* ButtonView.swift */; };
 		FB30702E2C82B433009C3EE5 /* CalcButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB30702D2C82B433009C3EE5 /* CalcButtonModel.swift */; };
 		FB3070302C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB30702F2C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift */; };
+		FB3070332C82BAEF009C3EE5 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3070322C82BAEF009C3EE5 /* StringUtils.swift */; };
 		FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */; };
 		FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */; };
 		FB7561D82C81C15C00A0A5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7561D72C81C15C00A0A5A0 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		FB3070292C82AF6A009C3EE5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FB30702D2C82B433009C3EE5 /* CalcButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButtonModel.swift; sourceTree = "<group>"; };
 		FB30702F2C82B4A1009C3EE5 /* RowOfCalcButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowOfCalcButtonsModel.swift; sourceTree = "<group>"; };
+		FB3070322C82BAEF009C3EE5 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		FB7561D02C81C15B00A0A5A0 /* Calculator Dark and Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Dark and Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_Dark_and_Light_ModeApp.swift; sourceTree = "<group>"; };
 		FB7561D52C81C15B00A0A5A0 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		FB3070312C82BADB009C3EE5 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				FB3070322C82BAEF009C3EE5 /* StringUtils.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		FB7561C72C81C15B00A0A5A0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		FB7561D22C81C15B00A0A5A0 /* Calculator Dark and Light Mode */ = {
 			isa = PBXGroup;
 			children = (
+				FB3070312C82BADB009C3EE5 /* helper */,
 				FB30702C2C82B401009C3EE5 /* view */,
 				FB30702B2C82B3FB009C3EE5 /* model */,
 				FB7561D32C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift */,
@@ -195,6 +206,7 @@
 				FB7561ED2C81CEAC00A0A5A0 /* CalculateButtonView.swift in Sources */,
 				FB7561D62C81C15B00A0A5A0 /* CalculatorView.swift in Sources */,
 				FB7561EB2C81CCF800A0A5A0 /* ComputationView.swift in Sources */,
+				FB3070332C82BAEF009C3EE5 /* StringUtils.swift in Sources */,
 				FB7561E92C81CC1700A0A5A0 /* SunMoonView.swift in Sources */,
 				FB7561D42C81C15B00A0A5A0 /* Calculator_Dark_and_Light_ModeApp.swift in Sources */,
 			);
