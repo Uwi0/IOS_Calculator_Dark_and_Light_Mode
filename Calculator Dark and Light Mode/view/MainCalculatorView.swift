@@ -7,41 +7,46 @@ struct MainCalculatorView: View {
     @State var mainResult: String = "0"
     
     var body: some View {
-        let padding: CGFloat = UIDevice.isIpad ?
-            UIScreen.main.bounds.width * 0.1 : 0
-        ZStack {
-            primaryBackgroundColor.ignoresSafeArea()
-            VStack {
-                
-                SunMoonView(lightMode: lightMode)
-                    .onTapGesture {
-                        withAnimation {
-                            lightMode.toggle()
+        GeometryReader { geometry in
+            let width = geometry.size.width
+            ZStack {
+                primaryBackgroundColor.ignoresSafeArea()
+                VStack {
+                    
+                    SunMoonView(lightMode: lightMode)
+                        .onTapGesture {
+                            withAnimation {
+                                lightMode.toggle()
+                            }
                         }
-                    }
-                
-                Spacer()
-                
-                ComputationView(
-                    currentComputation: currentComputation,
-                    mainResult: mainResult
-                ).padding(.horizontal, padding)
-                
-                Spacer()
-                
-                CalculateButtonView(
-                    currentComputation: $currentComputation,
-                    mainResult: $mainResult
-                )
-                
-                if UIDevice.isIpad {
+                    
                     Spacer()
+                    
+                    ComputationView(
+                        currentComputation: currentComputation,
+                        mainResult: mainResult
+                    ).padding(
+                        .horizontal,
+                        UIDevice.isIpad ? width * 0.1 : 0
+                    )
+                    
+                    Spacer()
+                    
+                    CalculateButtonView(
+                        currentComputation: $currentComputation,
+                        mainResult: $mainResult,
+                        width: width
+                    )
+                    
+                    if UIDevice.isIpad {
+                        Spacer()
+                    }
+                    
                 }
-                
+                .padding()
             }
-            .padding()
+            .environment(\.colorScheme, lightMode ? .light : .dark)
         }
-        .environment(\.colorScheme, lightMode ? .light : .dark)
     }
 }
 

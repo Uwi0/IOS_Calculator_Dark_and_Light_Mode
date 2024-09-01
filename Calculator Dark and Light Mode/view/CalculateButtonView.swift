@@ -6,6 +6,7 @@ struct CalculateButtonView: View {
     
     @Binding var currentComputation: String
     @Binding var mainResult: String
+    let width: CGFloat
     
     var body: some View {
         Grid() {
@@ -37,7 +38,8 @@ struct CalculateButtonView: View {
                 ButtonView(
                     calcButton: btnModel.calcButton,
                     fgColor: btnModel.color,
-                    bgColor: buttonBackgroundColor
+                    bgColor: buttonBackgroundColor,
+                    width: width
                 )
             }
         )
@@ -140,6 +142,7 @@ struct CalculateButtonView: View {
 #Preview {
     CalculateButtonView(
         currentComputation: .constant("hello"),
-        mainResult: .constant("world")
+        mainResult: .constant("world"),
+        width: 375
     )
 }

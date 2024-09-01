@@ -5,6 +5,7 @@ struct ButtonView: View {
     let calcButton: CalcButton
     let fgColor: Color
     let bgColor: Color
+    let width: CGFloat
     
     private var systemImage: String? {
         let value = calcButton.rawValue
@@ -19,9 +20,9 @@ struct ButtonView: View {
         return predicate ? nil : value
     }
     
-    private let buttonDim: CGFloat = UIDevice.isIpad ?
-        UIScreen.main.bounds.width / 6 :
-        UIScreen.main.bounds.width / 5
+    private var buttonDim: CGFloat {
+        UIDevice.isIpad ? width / 6 : width / 5
+    }
     
     
     var body: some View {
@@ -46,25 +47,29 @@ struct ButtonView: View {
         ButtonView(
             calcButton: .undo,
             fgColor: foregroundDigitsColor,
-            bgColor: buttonBackgroundColor
+            bgColor: buttonBackgroundColor, 
+            width: 375
         )
         
         ButtonView(
             calcButton: .one,
             fgColor: foregroundDigitsColor,
-            bgColor: buttonBackgroundColor
+            bgColor: buttonBackgroundColor,
+            width: 375
         )
         
         ButtonView(
             calcButton: .percent,
             fgColor: foregroundTopButtonsColor,
-            bgColor: buttonBackgroundColor
+            bgColor: buttonBackgroundColor,
+            width: 375
         )
         
         ButtonView(
             calcButton: .add,
             fgColor: foregroundRightButtonsColor,
-            bgColor: buttonBackgroundColor
+            bgColor: buttonBackgroundColor,
+            width: 375
         )
         
     }
